@@ -1,132 +1,244 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>معلم بلاط وبورسلان وترميمات بالرياض</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>مقاولات بلاط وبورسلان بالرياض</title>
+
+<meta name="description" content="أفضل معلم بلاط وبورسلان ولياسة وترميمات وعزل بالرياض بأسعار ممتازة وجودة عالية.">
 
 <style>
-body {
-    margin:0;
-    font-family: Arial;
-    direction: rtl;
-    background: linear-gradient(to bottom, #f5f5f5, #dcdcdc);
-    text-align: center;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,sans-serif;
 }
 
-header {
-    background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center;
-    background-size: cover;
-    color: white;
-    padding: 60px 20px;
+body{
+background:#111;
+color:#fff;
+line-height:1.8;
 }
 
-header h1 {
-    font-size: 28px;
-    background: rgba(0,0,0,0.5);
-    display: inline-block;
-    padding: 10px;
+header{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:relative;
 }
 
-section {
-    padding: 30px 15px;
+header::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
 }
 
-h2 {
-    color: #333;
+.hero{
+position:relative;
+z-index:2;
+max-width:700px;
 }
 
-.services span {
-    display:inline-block;
-    background:#333;
-    color:white;
-    padding:10px;
-    margin:5px;
-    border-radius:5px;
+.hero h1{
+font-size:45px;
+margin-bottom:20px;
+color:#FFD700;
 }
 
-.gallery img {
-    width:90%;
-    max-width:350px;
-    margin:10px;
-    border-radius:10px;
+.hero p{
+font-size:22px;
+margin-bottom:25px;
 }
 
-.btn {
-    display:inline-block;
-    padding:15px 20px;
-    margin:10px;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    font-size:18px;
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#25D366;
+color:#fff;
+text-decoration:none;
+border-radius:10px;
+font-size:22px;
+transition:.3s;
 }
 
-.call {background:#007BFF;}
-.whatsapp {background:#25D366;}
+.btn:hover{
+background:#1ebe5d;
+transform:scale(1.05);
+}
 
-footer {
-    background:#222;
-    color:white;
-    padding:15px;
+section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#FFD700;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1b1b1b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+border:1px solid #333;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#222;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#FFD700;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+.whatsapp-fixed{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#25D366;
+color:#fff;
+padding:15px 20px;
+border-radius:50px;
+font-size:20px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 0 15px rgba(0,0,0,.5);
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
-    <h1>أفضل معلم بلاط وبورسلان وترميمات بالرياض</h1>
-    <p>شغل نظيف - أسعار مناسبة - تنفيذ سريع</p>
+<div class="hero">
+<h1>معلم بلاط وبورسلان بالرياض</h1>
+
+<p>
+خبرة في تركيب البلاط والبورسلان والباركيه واللياسة والترميمات والعزل بأعلى جودة وأفضل الأسعار داخل الرياض
+</p>
+
+<a class="btn" href="https://wa.me/9665464859">
+تواصل واتساب
+</a>
+
+</div>
 </header>
 
 <section>
-    <h2>خدماتنا</h2>
-    <div class="services">
-        <span>بلاط</span>
-        <span>لياسة</span>
-        <span>بورسلان</span>
-        <span>باركيه</span>
-        <span>ترميمات</span>
-        <span>عزل</span>
-    </div>
+<h2 class="section-title">خدماتنا</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>تركيب بلاط</h3>
+<p>تركيب احترافي لجميع أنواع البلاط الأرضيات والجدران.</p>
+</div>
+
+<div class="card">
+<h3>بورسلان</h3>
+<p>تنفيذ دقيق للبلاط والبورسلان الحديث والفاخر.</p>
+</div>
+
+<div class="card">
+<h3>لياسة</h3>
+<p>أعمال لياسة داخلية وخارجية بجودة عالية.</p>
+</div>
+
+<div class="card">
+<h3>ترميمات</h3>
+<p>ترميم المنازل والجدران وإصلاح التشققات.</p>
+</div>
+
+<div class="card">
+<h3>باركيه</h3>
+<p>تركيب باركيه عصري بأشكال فخمة.</p>
+</div>
+
+<div class="card">
+<h3>عزل</h3>
+<p>عزل أسطح وحمامات لمنع التسربات والرطوبة.</p>
+</div>
+
+</div>
 </section>
 
 <section>
-    <h2>📞 تواصل معنا الآن</h2>
-    <a class="btn call" href="tel:05464859">اتصل الآن</a>
-    <a class="btn whatsapp" href="https://wa.me/9665464859">واتساب</a>
-</section>
+<h2 class="section-title">أعمالنا</h2>
 
-<section>
-    <h2>أعمالنا (قبل وبعد)</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
-        <img src="https://images.unsplash.com/photo-1599619351208-3e6c839d6828">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-    </div>
-</section>
+<div class="gallery">
 
-<section>
-    <h2>أعمال البلاط والبورسلان</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
-        <img src="https://images.unsplash.com/photo-1600566752227-8f3b6f8f1d7b">
-    </div>
-</section>
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
 
-<section>
-    <h2>أعمال اللياسة والعزل</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-    </div>
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200&auto=format&fit=crop">
+
+</div>
 </section>
 
 <footer>
-    <p>نعمل في جميع أنحاء الرياض</p>
+<p>
+جميع الحقوق محفوظة © مقاولات الرياض
+</p>
 </footer>
+
+<a class="whatsapp-fixed" href="https://wa.me/9665464859">
+واتساب
+</a>
 
 </body>
 </html>
